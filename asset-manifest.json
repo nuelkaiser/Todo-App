@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/REACT-TODO/static/css/main.ecb84a61.css",
+    "main.js": "/REACT-TODO/static/js/main.9e3296aa.js",
+    "static/js/787.9bbd3b2a.chunk.js": "/REACT-TODO/static/js/787.9bbd3b2a.chunk.js",
+    "static/media/bg-desktop-light.jpg": "/REACT-TODO/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
+    "static/media/bg-desktop-dark.jpg": "/REACT-TODO/static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
+    "index.html": "/REACT-TODO/index.html",
+    "static/media/icon-sun.svg": "/REACT-TODO/static/media/icon-sun.910b1f9a23741afc341e95653a51f14f.svg",
+    "static/media/icon-moon.svg": "/REACT-TODO/static/media/icon-moon.6c03114b495d05f4380b3c544d9afe2a.svg",
+    "static/media/icon-cross.svg": "/REACT-TODO/static/media/icon-cross.6ee81d30b75cab19d6f7314624fcc4d6.svg",
+    "main.ecb84a61.css.map": "/REACT-TODO/static/css/main.ecb84a61.css.map",
+    "main.9e3296aa.js.map": "/REACT-TODO/static/js/main.9e3296aa.js.map",
+    "787.9bbd3b2a.chunk.js.map": "/REACT-TODO/static/js/787.9bbd3b2a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecb84a61.css",
+    "static/js/main.9e3296aa.js"
+  ]
+}
