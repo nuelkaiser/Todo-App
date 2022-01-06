@@ -1,0 +1,479 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.major {
+  background: hsl(235, 21%, 11%);
+  width: 100%;
+  height: 100vh;
+  margin-top: -4px;
+}
+
+.white-major {
+  background: hsl(236, 33%, 92%);
+  width: 100%;
+  height: 100vh;
+  margin-top: -4px;
+}
+
+.bck {
+  object-fit: cover;
+  width: 100%;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -14em;
+  background: transparent;
+  position: absolute;
+  right: 34%;
+}
+
+.logo-change {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 33vw;
+  margin-bottom: 2em;
+}
+
+.logo-change h1 {
+  color: #fff;
+  letter-spacing: .5em;
+}
+
+.logo-change img {
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  background:  hsl(235, 24%, 19%);
+  padding: 15px 30px;
+  width: 33vw;
+  color:  #fff;
+  border-bottom:   hsl(237, 14%, 26%) 0.5px solid;
+  position: relative;
+}
+
+.white-list {
+  background:  hsl(0, 0%, 98%);
+  color: #000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  padding: 15px 30px;
+  width: 33vw;
+  border-bottom:   hsl(234, 11%, 52%) 1px solid;
+  position: relative;
+}
+
+input[type='text'] {
+  background: transparent;
+  padding: 15px 0px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+
+
+.place::placeholder {
+  font-size: 16px;
+  color: #fff;
+}
+
+.white-place::placeholder {
+  font-size: 16px;
+  color: #000;
+}
+
+.create {
+  margin: 18px 0;
+  color:  hsl(234, 11%, 52%);
+  border-bottom: none;
+  padding: 0 0 0 30px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:  hsl(235, 24%, 19%);
+  color:  hsl(234, 11%, 52%);
+  padding: 10px 30px;
+  font-size: 12px;
+  width: 33vw;
+}
+
+.white-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:  hsl(0, 0%, 98%);
+  color:   hsl(234, 11%, 52%);
+  padding: 10px 30px;
+  font-size: 12px;
+  width: 33vw;
+}
+
+.state {
+  display: flex;
+  align-items: center;
+  gap: .8em;
+}
+
+.new-state {
+  display: flex;
+  align-items: center;
+  gap: .8em;
+}
+
+
+
+
+.state option:hover {
+  color:  #fff;
+  cursor: pointer;
+}
+
+.state option::selection {
+  color:  #fff;
+  cursor: pointer;
+}
+
+.new-state option:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.instruction {
+  margin-top: 3em;
+  font-size: 11px;
+  color: hsl(234, 11%, 52%);
+}
+
+.clear {
+  background: transparent;
+  outline: none;
+  border: none;
+  color:  hsl(234, 11%, 52%);
+  cursor: pointer;
+}
+
+.white-clear {
+  background: transparent;
+  outline: none;
+  border: none;
+  color:  hsl(234, 11%, 52%);
+  cursor: pointer;
+}
+
+.clear:hover {
+  color:  #fff;
+  cursor: pointer;
+}
+
+.white-clear:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+
+.checkbox-label input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.dark-checkbox-label input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.checkbox-label .checkbox-custom {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+
+.dark-checkbox-label .checkbox-custom {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+
+.checkbox-label .checkbox-custom::after {
+  position: absolute;
+  content: '';
+  left: 12px;
+  top: 12px;
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  border: solid #009bff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(0deg) scale(0);
+  -ms-transform: rotate(0deg) scale(0);
+  transform: rotate(0deg) scale(0);
+  opacity: 1;
+}
+
+.dark-checkbox-label .checkbox-custom::after {
+  position: absolute;
+  content: '';
+  left: 12px;
+  top: 12px;
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  border: solid #009bff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(0deg) scale(0);
+  -ms-transform: rotate(0deg) scale(0);
+  transform: rotate(0deg) scale(0);
+  opacity: 1;
+}
+
+
+.checkbox-label input:checked ~.checkbox-custom {
+  background: linear-gradient( to right, hsl(192, 100%, 67%) , hsl(280, 87%, 65%) );
+  border-radius: 50%;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+  border: 2px solid #fff;
+}
+
+.dark-checkbox-label input:checked ~.checkbox-custom {
+  background: linear-gradient( to right, hsl(192, 100%, 67%) , hsl(280, 87%, 65%) );
+  border-radius: 50%;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+  border: 2px solid #fff;
+}
+
+.checkbox-label input:checked ~.checkbox-custom::after {
+ -webkit-transform: rotate(45deg) scale(1);
+ -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+
+}
+
+.dark-checkbox-label input:checked ~.checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+   transform: rotate(45deg) scale(1);
+   opacity: 1;
+   left: 6px;
+   top: 2px;
+   width: 6px;
+   height: 12px;
+   border: solid #fff;
+   border-width: 0 2px 2px 0;
+   background-color: transparent;
+   border-radius: 0;
+}
+
+.delete-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+}
+
+.cross {
+   position: absolute;
+   right: 10px;
+   cursor: pointer;
+}
+
+.check-pls {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+
+/*MEDIA QURIES*/
+@media (max-width: 1024px) {
+
+  .todo {
+    margin-top: -11em;
+    right: 31%;
+  }
+
+  .logo-change {
+    width: 39vw;
+  }
+
+  .list,
+  .white-list {
+    width: 39vw;
+  }
+
+  
+
+  .info,
+  .white-info {
+    width: 39vw;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .todo {
+    margin-top: -8.4em;
+    right: 29%;
+  }
+
+  .logo-change {
+    width: 42vw;
+  }
+
+  .list,
+  .white-list {
+    width: 42vw;
+  }
+
+  
+
+  .info,
+  .white-info {
+    width: 42vw;
+    font-size: 9px;
+  }
+  
+  .clear,
+  .white-clear {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 425px) {
+  .todo {
+    margin-top: -5em;
+    right: 17%;
+  }
+
+  .logo-change {
+    width: 65vw;
+  }
+
+  .list,
+  .white-list {
+    width: 65vw;
+  }
+
+  
+
+  .info,
+  .white-info {
+    width: 65vw;
+    font-size: 9px;
+  }
+  
+  .clear,
+  .white-clear {
+    font-size: 9px;
+  }
+}
+
+
+
+@media (max-width: 375px) {
+  .todo {
+    margin-top: -4.7em;
+    right: 15%;
+  }
+  
+  .info,
+  .white-info {
+    font-size: 7px;
+    width: 70vw;
+  }
+  
+  .clear,
+  .white-clear {
+    font-size: 7px;
+  }
+
+  .logo-change {
+    width: 70vw;
+  }
+
+  .list,
+  .white-list {
+    width: 70vw;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .todo {
+    margin-top: -4em;
+    right: 11.7%;
+  }
+  
+  .info,
+  .white-info {
+    font-size: 7px;
+    width: 75vw;
+  }
+  
+  .clear,
+  .white-clear {
+    font-size: 7px;
+  }
+
+  .logo-change {
+    width: 75vw;
+  }
+
+  .list,
+  .white-list {
+    width: 75vw;
+  }
+
+}
+
+
+
+
