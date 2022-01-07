@@ -26,34 +26,11 @@ function Todo({ Changer, Change }) {
 
     useEffect(
         () => {
+            const uploadTodos = () => {
+                localStorage.setItem('todos', JSON.stringify(Todo))
+            }
             uploadTodos();
-            filteredInfo();
-        },
-        [Todo, Status]
-    )
-
-
-    const multipleDelete = () => {
-        const newTodos = Todo.filter((todos) => todos.completed === false);
-        setTodo(newTodos)
-        console.log(newTodos)
-    }
-
-
-    const uploadTodos = () => {
-        localStorage.setItem('todos', JSON.stringify(Todo))
-    }
-
-    const saveTodos = () => {
-        if (localStorage.getItem('todos') === null) {
-            localStorage.setItem('todos', JSON.stringify([]))
-        } else {
-            let saved = JSON.parse(localStorage.getItem('todos'))
-            setTodo(saved)
-        }
-    }
-
-
+            
     const filteredInfo = () => {
         switch (Status) {
             case 'completed':
@@ -84,6 +61,31 @@ function Todo({ Changer, Change }) {
                 break;
         }
     }
+            filteredInfo();
+        },
+        [Todo, Status]
+    )
+
+
+    const multipleDelete = () => {
+        const newTodos = Todo.filter((todos) => todos.completed === false);
+        setTodo(newTodos)
+        console.log(newTodos)
+    }
+
+
+    
+
+    const saveTodos = () => {
+        if (localStorage.getItem('todos') === null) {
+            localStorage.setItem('todos', JSON.stringify([]))
+        } else {
+            let saved = JSON.parse(localStorage.getItem('todos'))
+            setTodo(saved)
+        }
+    }
+
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
